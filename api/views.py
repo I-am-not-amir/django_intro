@@ -27,8 +27,6 @@ from django.http import HttpResponse
 def weather_info(request):  
     # ارسال درخواست به API  
     response = requests.get('https://wttr.in/kerman?format=j1')  
-    response.raise_for_status()  # بررسی موفقیت درخواست  
-
     # استخراج اطلاعات از پاسخ  
     data = response.json()['current_condition'][0]  
     context = {  
