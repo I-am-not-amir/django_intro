@@ -1,0 +1,26 @@
+<!DOCTYPE html>  
+<html lang="fa">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <!-- لینک به استایل‌های Bootstrap برای طراحی زیباتر -->  
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">  
+    <title>اطلاعات آب و هوا</title>  
+</head>  
+<body>  
+    <div class="container mt-5">  
+        <h1 class="text-center">اطلاعات آب و هوای کرمان</h1>  
+        <div class="card text-center mt-4">  
+            <div class="card-body">  
+                    <h5 class="card-title">اطلاعات به روز شده</h5>  
+                    <!-- نمایش دما -->  
+                    <p class="card-text">دمای فعلی: {{ temp_c }} درجه سانتی‌گراد</p>  
+                    <!-- نمایش سرعت باد -->  
+                    <p class="card-text">سرعت باد: {{ windspeed_kmph }} کیلومتر بر ساعت</p>  
+                    <!-- نمایش رطوبت -->  
+                    <p class="card-text">درصد رطوبت: {{ humidity }}%</p>    
+            </div>  
+        </div>  
+    </div>  
+</body>  
+</html>
