@@ -19,10 +19,7 @@ def random_number(request):
     fact = response.text  
     # نمایش داده در قالب  
     return render(request, 'random_number/random_number.html', {'number': random_number, 'fact': fact})
-
-import requests  
-from django.shortcuts import render  
-from django.http import HttpResponse  
+ 
 
 def weather_info(request):  
     # ارسال درخواست به API  
