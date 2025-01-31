@@ -1,7 +1,8 @@
 from django.urls import path
-from . import views
+from .views import random_number, weather_info,random_password
 
 urlpatterns = [
-    path('generate-password',views.random_password),
-    path('generate-number',views.random_number)
+    path('generate-password',random_password),
+    path('generate-number',random_number),
+    path('weather/',weather_info),
 ]
